@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body background="111.jpg">
+<body background="C:\Users\ASUS\Desktop\111.jpg">
+    <font color="white" > <h1> <center>Quiz</center> </h1> </font> <br>
+    <center> <a href="index.html"> <font size = 6 color = white> Home</font></a>  <font color="white" size = 8> | </font> <a href="page 2 sovled.html"> <font color="white" size="6"> Solved Examples </font> </a> </center>
+<br>
+<font color="white" >
+    Q1) The shape of an ice-cream cone is a combination of: <br>
+    <input type="radio" name="question1"> Sphere + cylinder <br>
+    <input type="radio" name="question1"> Sphere + cone <br>
+    <input type="radio" name="question1"> Hemisphere + cylinder <br>
+    <input type="radio" name="question1" id="correct1"> Hemisphere + cone  <br>
+
+    Q2) If a cone is cut parallel to the base of it by a plane in two parts, then the shape of the top of the cone will be a: <br>
+    <input type="radio" name="question2"> Sphere<br>
+    <input type="radio" name="question2"> Cube <br>
+    <input type="radio" name="question2" id="correct2"> Cone iteself <br>
+    <input type="radio" name="question2"> Cylinder <br>
+
+    Q3) If we change the shape of an object from a sphere to a cylinder, then the volume of cylinder will <br>    
+    <input type="radio" name="question3"> Increase <br>
+    <input type="radio" name="question3"> Decrease <br>
+    <input type="radio" name="question3" id="correct3"> Remains Unchanged <br>
+    <input type="radio" name="question3"> Doubles <br>
+
+    Q4) The radius of the top and bottom of a bucket of slant height 35 cm are 25 cm and 8 cm. The curved surface of the bucket is: <br>    
+    <input type="radio" name="question4"> 4000 sq.cm <br>
+    <input type="radio" name="question4"> 3500 sq.cm <br>
+    <input type="radio" name="question4" id="correct4"> 3630 sq.cm <br>
+    <input type="radio" name="question4"> 3750 sq.cm <br>
+
+    Q5) A tank is made of the shape of a cylinder with a hemispherical depression at one end. The height of the cylinder is 1.45 m and radius is 30 cm. The total surface area of the tank is: <br>    
+    <input type="radio" name="question5"> 30 m <br>
+    <input type="radio" name="question5" id="correct5"> 3.3 m <br>
+    <input type="radio" name="question5"> 30.3 m <br>
+    <input type="radio" name="question5"> 3300 m <br>
+
+    Q6) If we join two hemispheres of same radius along their bases, then we get a <br>    
+    <input type="radio" name="question6"> Cone <br>
+    <input type="radio" name="question6"> Cylinder <br>
+    <input type="radio" name="question6" id="correct6"> Sphere <br>
+    <input type="radio" name="question6"> Cuboid <br>
+
+    Q7) A cylindrical pencil sharpened at one edge is the combination of <br>    
+    <input type="radio" name="question7" id="correct7"> a cone and a cylinder <br>
+    <input type="radio" name="question7"> frustum of a cone and a cylinder <br>
+    <input type="radio" name="question7"> a hemisphere and a cylinder <br>
+    <input type="radio" name="question7"> two cylinders <br>
+
+    Q8) A hollow cube of internal edge 22 cm is filled with spherical marbles of diameter 0.5 cm and it is assumed that 1/8 space of the cube remains unfilled. Then the number of marbles that the cube can accommodate is <br>    
+    <input type="radio" name="question8" id="correct8"> 142296  <br>
+    <input type="radio" name="question8"> 142396  <br>
+    <input type="radio" name="question8"> 142496 <br>
+    <input type="radio" name="question8"> 142596 <br>
+
+    Q9) A solid piece of iron in the form of a cuboid of dimensions 49 cm × 33 cm × 24 cm, is moulded to form a solid sphere. The radius of the sphere is <br>    
+    <input type="radio" name="question9" id="correct9"> 21 cm <br>
+    <input type="radio" name="question9"> 23 cm <br>
+    <input type="radio" name="question9"> 25 cm <br>
+    <input type="radio" name="question9"> 19 cm <br> 
+</font> <br>
+
+    <input type="submit" name="submit" value="submitQuiz" onClick="result()">
+
+    <script>
+        function result() 
+        {
+            var score=0;
+            if (document.getElementById ('correct1').checked) 
+            {
+                score++;
+            }
+
+            if (document.getElementById ('correct2').checked) 
+            {
+                score++;
+            }
+
+            if (document.getElementById ('correct3').checked) 
+            {
+                score++;
+            }
+
+            if (document.getElementById ('correct4').checked) 
+            {
+                score++;
+            }
+
+            if (document.getElementById ('correct5').checked) 
+            {
+                score++;
+            }
+
+            if (document.getElementById ('correct6').checked) 
+            {
+                score++;
+            }
+
+            if (document.getElementById ('correct7').checked) 
+            {
+                score++;
+            }
+
+            if (document.getElementById ('correct8').checked) 
+            {
+                score++;
+            }
+
+            if (document.getElementById ('correct9').checked) 
+            {
+                score++;
+            }
+            alert("Your score is:"+score);  
+        }
+    </script>
+</body>
+</html>
